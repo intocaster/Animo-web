@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="Alchemist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8a4b4d7038.js" crossorigin="anonymous"></script>
+    <title>Light Curator</title>
+</head>
+<header>
+    <div class="topnav" id="myTopnav">
+        <div class="nav">
+            <a href="#home" class="active"><img src="animo.png" alt=""></a>
+            <a href="#news" class="hide navi">HOME</a>
+            <a href="#contact" class="hide navi2">CATALOG</a>
+            <a href="#search" class="iconos"><i class="fas fa-search"></i></a>
+        <a href="#bag" class="iconos2"><i class="fas fa-shopping-bag"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        </div>
+        
+    </div>
+</header>
+
+<body>
+<div class="description">
+    <img src="alchemistfont3.png" height="60px" alt="name">
+</div>
+<div class="gallerycontainer">
+
+<a class="thumbnail" href="#thumb"><img src="pieces/curator/1.JPG" width="75px" height="75px" border="0" /><span><img src="pieces/curator/1.JPG" /><br />Sample Text</span></a> 
+
+<br>
+
+<a class="thumbnail" href="#thumb"><img src="pieces/curator/2.JPG" width="75px" height="75px" border="0" /><span><img src="pieces/curator/2.JPG" /><br />Sample Text</span></a>
+
+<br />
+
+<a class="thumbnail" href="#thumb"><img src="pieces/curator/3.JPG" width="75px" height="75px" border="0" /><span><img src="pieces/curator/3.JPG" /><br />Sample Text</span></a> 
+
+<br>
+
+<a class="thumbnail" href="#thumb"><img src="pieces/curator/4.JPG" width="75px" height="75px" border="0" /><span><img src="pieces/curator/4.JPG" /><br />Sample Text</span></a>
+
+<br />
+
+<a class="thumbnail" href="#thumb"><img src="pieces/curator/5.JPG" width="75px" height="75px" border="0" /><span><img src="pieces/curator/5.JPG" /><br />Sample Text</span></a>
+
+<br />
+
+<a class="thumbnail" href="#thumb"><img src="pieces/curator/6.JPG" width="75px" height="75px" border="0" /><span><img src="pieces/curator/6.JPG" /><br />Sample Text</span></a>
+
+<br />
+
+<a class="thumbnail" href="#thumb"><img src="pieces/curator/7.JPG" width="75px" height="75px" border="0" /><span><img src="pieces/curator/7.JPG" /><br />Sample Text</span></a>
+
+<br />
+
+<a class="thumbnail" href="#thumb"><img src="pieces/curator/8.JPG" width="75px" height="75px" border="0" /><span><img src="pieces/curator/8.JPG" /><br />Sample Text</span></a>
+
+<br />
+
+<p class="price">$120.00</p>
+<p class="price">140,000₩</p>
+</div>
+<div class="finalcont">
+    <div class="forms">
+        <h2 class="des">Size</h2>
+        <select name="OS" class="inputs">
+            <option value="1">Small</option> 
+            <option value="2">Medium</option> 
+            <option value="3">Large</option>
+         </select>
+         <h2 class="des quan">Quantity</h2>
+         <input type="number" min="1" class="inputs">
+         <br>
+         <button type="button" class="cart product" price="120" title="Light Curator">Add to Cart</button>
+         <button type="button" class="cart productK" priceK="140000" titleK="Light Curator">Add to Cart(₩)</button>
+    </div>
+    <div class="desc">
+            <h3>Fabric Description:</h3> <br>
+            <p>Faux Cattle Suede Leather 
+            </p>
+            <br>
+            <h3>Light Curator is 100% Handmade.</h3> <br>
+            <p> Lightweight Blouse.<br> <br>
+                Soft to the Touch, Smooth on all Skin Types.<br> <br>
+                Light Curator, was created with the intent of Lush, Life, as you continue your ongoing life.
+                <br> <br>
+                Protection and Positivity will remain with you, with a hint of Curiosity of Life.<br>
+            </p>
+    </div>
+</div>
+
+<script src="minicart.js"></script>
+<script>
+    // initial cart setup 
+    paypal.minicart.render({
+    strings:{
+    button:'Pay'
+    ,buttonAlt: "Total"
+    ,subtotal: 'Total:'
+    ,empty: 'There are no products in the cart.'
+    }
+    });
+    // Events to add products to cart
+    
+    $('.product').click(function(e){
+        e.stopPropagation();
+        paypal.minicart.cart.add({
+        business: 'ewayzani@yahoo.com', // PayPal account to receive the money
+        item_name: $(this).attr("title"),
+        amount: $(this).attr("price"),
+        currency_code: 'USD',
+        
+        });
+    });
+
+    $('.productK').click(function(e){
+        e.stopPropagation();
+        paypal.minicart.cart.add({
+        business: 'ewayzani@yahoo.com', // PayPal account to receive the money
+        item_name: $(this).attr("titleK"),
+        amount: $(this).attr("priceK"),
+        currency_code: 'KRW',
+        
+        });
+    });
+</script>
+</body>
