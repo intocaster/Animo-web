@@ -1,6 +1,6 @@
 .grid-container {
     /* display: grid;
-    grid-template-columns: repeat(auto-fill, 230px);
+    grid-template-columns: repeat(auto-fill, 150px);
     gap: 20px;
     justify-content: center; */
   
@@ -99,7 +99,7 @@ header{
   
 
   .grid-item {
-    width: 230px;
+    width: 130px;
     /* height: 200px;
     object-fit: cover; */
     margin-bottom: 40px;
