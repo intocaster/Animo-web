@@ -3,7 +3,8 @@
   }
 
 body{
-  height: 900px;
+  height: 700px;
+  background-image: url('12.gif');
 }
 
 /* Add a black background color to the top navigation */
@@ -48,15 +49,11 @@ body{
     width: 500px;
 }
 
-
-
-
-
-
-
-
-
-
+.neon{
+  width: 100%;
+  padding-top: 36.75px;
+  height: 100px;
+}
 
 .div1 {
   height: 550px;
@@ -82,7 +79,7 @@ body{
 
 
 .contenedor{
-  height: 100%;
+  height: 600px;
   width: 100%;
 }
 
@@ -111,13 +108,15 @@ body{
 }
 #left{
   width: 40%;
+  height: 2700px;
 }
 #center{
   width: 40%;
-  height: 4000px;
+  height: 2700px;
 }
 #right{
   width: 40%;
+  height: 2700px;
 }
 #left a {
   display:block; 
@@ -196,7 +195,14 @@ body{
 .spc3{
   height:50px;
 }
-
+.lookbook{
+  position: absolute;
+  bottom: -100px;
+  text-align: center;
+}
+.lookbookfooter{
+  width:70%;
+}
 
 /* .thunder{
   height: 50px !important; 
@@ -211,6 +217,9 @@ body{
     .topnav a.icon {
       float: right;
       display: block;
+      position: absolute;
+      top: 0px;
+      right: 0;
     }
     
     #left a {
