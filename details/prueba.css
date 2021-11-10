@@ -55,13 +55,10 @@
       width: 500px;
   }
   
-
   
-
     #galeria, #galeria * {box-sizing:border-box}
     #galeria {
     padding-bottom: 0; 
-    height: 600px;
     }
     #galeria_miniaturas {
     display: flex;
@@ -84,16 +81,18 @@
     height:  60px;  /* Alto de las miniaturas */
     float: left;
     cursor: pointer;
+    padding: 5px;
     margin: 10px 5px;
     }
     .miniatura:hover {
     opacity:.8;   /* Opacidad */
-    border: 1px solid #7C00FF;
     }
     .miniatura:active {
     opacity:1;
     }
-    
+
+
+
   .description{
       height: 60px;
       display: flex;
@@ -111,9 +110,6 @@
     color: white;
     text-align: center;
     font-size: xx-large;
-  }
-  .usdprice{
-    padding-top: 100px;
   }
   
   .forms{
