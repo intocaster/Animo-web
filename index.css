@@ -14,7 +14,7 @@ body{
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.link {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -97,7 +97,7 @@ body{
 #content{
   display: flex;
   flex-direction: row;
-  height: 600px;
+  height: 2800px;
 }
 
 *#left::-webkit-scrollbar {
@@ -195,19 +195,13 @@ body{
 .spc3{
   height:50px;
 }
-.lookbook{
-  position: absolute;
-  bottom: -100px;
+.lookdiv{
   text-align: center;
+  
 }
 .lookbookfooter{
   width:70%;
 }
-
-/* .thunder{
-  height: 50px !important; 
-  width: 100%;
-} */
 
 
   
@@ -281,7 +275,7 @@ body{
       right: 0;
       top: 0;
     }
-    .topnav.responsive a {
+    .topnav.responsive .link {
       float: none;
       display: block;
       text-align: left;
