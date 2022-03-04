@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8a4b4d7038.js" crossorigin="anonymous"></script>
+    <title>DivineSymmetry</title>
+</head>
+<header>
+    <div class="topnav" id="myTopnav">
+      <div class="logo">
+        <img src="../items/animo.png" class="animo" alt="animologo">
+      </div> 
+      <a href="../index.html" target="_blank" class="active">Home</a>
+      <a href="../lookbook.html" target="_blank">LookBook</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+</header>
+
+<body>
+  <div id='product-component-1646394320394'></div>
+  <script type="text/javascript">
+  /*<![CDATA[*/
+  (function () {
+    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+    if (window.ShopifyBuy) {
+      if (window.ShopifyBuy.UI) {
+        ShopifyBuyInit();
+      } else {
+        loadScript();
+      }
+    } else {
+      loadScript();
+    }
+    function loadScript() {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = scriptURL;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+      script.onload = ShopifyBuyInit;
+    }
+    function ShopifyBuyInit() {
+      var client = ShopifyBuy.buildClient({
+        domain: 'intocaster.myshopify.com',
+        storefrontAccessToken: 'c1d6d9b180ed248c8562bb381365e9a9',
+      });
+      ShopifyBuy.UI.onReady(client).then(function (ui) {
+        ui.createComponent('product', {
+          id: '7584018858225',
+          node: document.getElementById('product-component-1646394320394'),
+          moneyFormat: '%24%7B%7Bamount%7D%7D',
+          options: {
+    "product": {
+      "styles": {
+        "product": {
+          "@media (min-width: 601px)": {
+            "max-width": "calc(25% - 20px)",
+            "margin-left": "20px",
+            "margin-bottom": "50px"
+          }
+        },
+        "price": {
+          "font-weight": "bold"
+        },
+        "compareAt": {
+          "font-weight": "bold"
+        },
+        "unitPrice": {
+          "font-weight": "bold"
+        }
+      },
+      "contents": {
+        "button": false,
+        "buttonWithQuantity": true
+      },
+      "width": "580px",
+      "text": {
+        "button": "Add to cart"
+      }
+    },
+    "productSet": {
+      "styles": {
+        "products": {
+          "@media (min-width: 601px)": {
+            "margin-left": "-20px"
+          }
+        }
+      }
+    },
+    "modalProduct": {
+      "contents": {
+        "img": false,
+        "imgWithCarousel": true,
+        "button": false,
+        "buttonWithQuantity": true
+      },
+      "styles": {
+        "product": {
+          "@media (min-width: 601px)": {
+            "max-width": "100%",
+            "margin-left": "0px",
+            "margin-bottom": "0px"
+          }
+        },
+        "price": {
+          "font-family": "Helvetica Neue, sans-serif",
+          "font-weight": "normal",
+          "font-size": "18px",
+          "color": "#4c4c4c"
+        },
+        "compareAt": {
+          "font-family": "Helvetica Neue, sans-serif",
+          "font-weight": "normal",
+          "font-size": "15.299999999999999px",
+          "color": "#4c4c4c"
+        },
+        "unitPrice": {
+          "font-family": "Helvetica Neue, sans-serif",
+          "font-weight": "normal",
+          "font-size": "15.299999999999999px",
+          "color": "#4c4c4c"
+        }
+      },
+      "text": {
+        "button": "Add to cart"
+      }
+    },
+    "option": {},
+    "cart": {
+      "text": {
+        "total": "Subtotal",
+        "button": "Checkout"
+      }
+    },
+    "toggle": {}
+  },
+        });
+      });
+    }
+  })();
+  /*]]>*/
+  </script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+<a href="../lookbook.html" target="_blank" class="lookbook">
+    <img src="LOOKBOOK.png" class="lookbookfooter" alt="lookbook">
+  </a>
+</div>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+</body>
