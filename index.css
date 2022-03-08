@@ -56,12 +56,11 @@ body{
 .details{
   color: black;
   padding-top: 20px;
-  font-weight: 700;
-  font-size: 30px;
-}
-.chart{
   padding-bottom: 150px;
+  font-weight: 700;
+  font-size: 20px;
 }
+
 
 .contenedor{
   height: 600px;
@@ -125,9 +124,7 @@ body{
       height: 100%;
       width: 100%;
     }
-    #center{
-      padding-top: 40px;
-    }
+    
     #center .item {
       display:block; 
       width: 100%;
@@ -135,7 +132,12 @@ body{
       margin: auto;
     }
     .alchemist{
-      height: 100% !important; 
+      height: 400px !important; 
+      
+    }
+
+    .hood{
+      height: 550px !important;
     }
 
     
