@@ -56,6 +56,22 @@
       width: 500px;
   }
 
+  .desc{
+    padding-top:15px;
+    width: 50%;
+    text-align:left;
+  }
+  .desc p{
+    font-size: large;
+  }
+  .desc h3{
+    color: #7C00FF;
+  }
+  .finalcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
   .footer{
     text-align: center;
