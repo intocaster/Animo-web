@@ -3,7 +3,6 @@
   }
 
 body{
-  height: 700px;
   background-image: url('Stars.png');
   text-align: center;
 	margin: 0;
@@ -63,13 +62,11 @@ body{
 
 
 .contenedor{
-  height: 600px;
   width: 100%;
 }
 
 
 #global {
-  height: 2000px;
   width: 100%;
   overflow-y: scroll;
 }
@@ -82,13 +79,7 @@ body{
   width:50%;
 }
 
-.lookdiv{
-  text-align: center;
-  
-}
-.lookbookfooter{
-  width:70%;
-}
+
 
 
   
