@@ -62,7 +62,8 @@
     text-align:left;
   }
   .desc p{
-    font-size: large;
+    font-size: medium;
+    font-weight: 700;
   }
   .desc h3{
     color: #7C00FF;
@@ -73,13 +74,7 @@
     align-items: center;
   }
   
-  .footer{
-    text-align: center;
-  }
-  .lookbookfooter{
-    height: 75%;
-    width: 75%;
-  }
+
   
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
   @media screen and (max-width: 600px) {
